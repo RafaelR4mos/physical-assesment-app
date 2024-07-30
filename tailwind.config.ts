@@ -19,6 +19,12 @@ const config = {
     },
     extend: {
       colors: {
+        "custom-bg": "#F4F7FA",
+        "highlight": "#4DA3F6",
+        "primary-custom": "#4087CB",
+        "secondary-custom": "#7FB6EC",
+        "text": "#06080A",
+        "light-text": "#383838",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
