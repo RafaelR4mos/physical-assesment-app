@@ -2,7 +2,7 @@ import { Person, Barbell, ArrowsVertical } from "@phosphor-icons/react";
 
 type SummaryCardProps = {
   type: "people" | "weight" | "height";
-  data: number;
+  data: string;
 };
 
 export function SummaryCard({ type, data }: SummaryCardProps) {
