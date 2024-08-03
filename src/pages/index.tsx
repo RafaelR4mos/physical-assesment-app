@@ -13,7 +13,6 @@ import {
   calculateHeartBeat,
 } from "@/utils/Calc";
 import {
-  completeDTO,
   dataDTO,
   heartBeatResponse,
   heartFrequencyResponse,
