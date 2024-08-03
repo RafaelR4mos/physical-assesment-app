@@ -1,3 +1,5 @@
+'use client';
+
 import { ButtonHTMLAttributes } from "react";
 
 type FilterBtnProps = ButtonHTMLAttributes<HTMLButtonElement> & {

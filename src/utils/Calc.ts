@@ -28,13 +28,16 @@ export function calculateAverageHeartFrequency(data: dataDTO[]): heartFrequencyR
     return { pas: item.pas, pad: item.pad }
   }).filter(item => item.pas > 0 && item.pad > 0)
 
-  const totalPadAverage = (validHeartFrequencyValues
-    .map(item => item.pad).reduce((sum, pad) => sum + pad, 0)) / validHeartFrequencyValues.length
+  const totalPadAverage = Math.round((validHeartFrequencyValues
+    .map(item => item.pad).reduce((sum, pad) => sum + pad, 0)) / validHeartFrequencyValues.length)
 
-  const totalPaSAverage = (validHeartFrequencyValues
-    .map(item => item.pas).reduce((sum, pas) => sum + pas, 0)) / validHeartFrequencyValues.length
+  const totalPaSAverage = Math.round((validHeartFrequencyValues
+    .map(item => item.pas).reduce((sum, pas) => sum + pas, 0)) / validHeartFrequencyValues.length)
 
   let heartFrequencyLabel: heartFrequencyLabels = "DESCONHECIDO" 
+
+  console.log("PAS: ", totalPaSAverage)
+  console.log(totalPaSAverage >= 130 && totalPaSAverage <= 139)
 
   if(totalPadAverage < 80 && totalPaSAverage < 120) {
     heartFrequencyLabel = "NORMAL"

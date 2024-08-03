@@ -1,5 +1,4 @@
 import { heartFrequencyResponse } from "@/types/dataTypes";
-import { Heartbeat } from "@phosphor-icons/react";
 import { Stethoscope } from "lucide-react";
 import { CardTooltip } from "./card-tooltip";
 
