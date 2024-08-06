@@ -21,6 +21,7 @@ import {
 import { CardHeartFrequency } from "@/components/card-heart-frequency";
 import { CardHeartBeat } from "@/components/card-heartbeat";
 import { Button } from "@mui/material";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -478,7 +479,7 @@ export default function Home() {
           <Button
             variant="contained"
             sx={{ backgroundColor: "#4DA3F6" }}>
-            Adicionar registros
+            <Link href={"addRegister"}> Adicionar registros</Link>
           </Button>
         </div>
       </main>
